@@ -1,0 +1,16 @@
+/Users/admin/Projects/ToHomeProject/ToHomeProject/bin/Debug/netstandard2.0/ToHomeProject.deps.json
+/Users/admin/Projects/ToHomeProject/ToHomeProject/bin/Debug/netstandard2.0/ToHomeProject.dll
+/Users/admin/Projects/ToHomeProject/ToHomeProject/bin/Debug/netstandard2.0/ToHomeProject.pdb
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/HomePage.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/LoginPage.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/RegisterPage.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.csproj.CoreCompileInputs.cache
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.AssemblyInfoInputs.cache
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.AssemblyInfo.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.csproj.Fody.CopyLocal.cache
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.dll
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.pdb
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.csprojAssemblyReference.cache

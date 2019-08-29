@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ToHomeProject.Views.LoginPage">
+     <ScrollView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+        
+            <Image Style="{StaticResource Picture}"/>
+            <Entry Text="{Binding UserData.UserName}"  Style="{StaticResource EntryUserName}"></Entry>
+            <Entry Text="{Binding UserData.Password}"  Style="{StaticResource EntryUserPass}"></Entry>
+
+            <Button Style="{StaticResource LoginButton}" Command="{Binding SaveLoginData}"></Button>
+
+            <Button Style="{StaticResource RegisterButton}" Command="{Binding ToRegistePage}"></Button>
+
+            <Label Text="{Binding Result, Mode=TwoWay}" Style="{StaticResource LabelResult}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

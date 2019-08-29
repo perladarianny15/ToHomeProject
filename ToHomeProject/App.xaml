@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToHomeProject.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Picture" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Source" Value="HomePhoto.png"/>
+
+                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="HeightRequest" Value="200"/>
+
+            </Style>
+            <Style x:Key="EntryUserName" TargetType="Entry">
+                <Setter Property="Placeholder" Value="Name"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+            <Style x:Key="EntryUserPass" TargetType="Entry">
+                <Setter Property="Placeholder" Value="Password"/>
+                <Setter Property="Margin" Value="5"/>
+                 <Setter Property="IsPassword" Value="True"/>
+            </Style>
+            <Style x:Key="LoginButton" TargetType="Button">
+                <Setter Property="Text" Value="Login"/>
+                <Setter Property="TextColor" Value="white"/>
+                <Setter Property="BackgroundColor" Value="#0489B1"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            </Style>
+            <Style x:Key="RegisterButton" TargetType="Button">
+                <Setter Property="Text" Value="Register"/>
+                <Setter Property="TextColor" Value="white"/>
+                <Setter Property="BackgroundColor" Value="#10ada0"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            </Style>
+            <Style x:Key="LabelResult" TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            </Style>
+            <Style x:Key="Home" TargetType="Button">
+                <Setter Property="Text" Value="Home"/>
+                <Setter Property="TextColor" Value="white"/>
+                <Setter Property="Margin" Value="70"/>
+                <Setter Property="Font" Value="20"/>
+                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
+            </Style>
+            <Style x:Key="Electrodomesticos" TargetType="Button">
+                <Setter Property="Text" Value="Electrodomesticos"/>
+                <Setter Property="TextColor" Value="white"/>
+                <Setter Property="Margin" Value="70"/>
+                <Setter Property="Font" Value="20"/>
+                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
+            </Style>
+            <Style x:Key="Muebles" TargetType="Button">
+                <Setter Property="Text" Value="Muebles"/>
+                <Setter Property="TextColor" Value="white"/>
+                <Setter Property="Margin" Value="70"/>
+                <Setter Property="Font" Value="20"/>
+                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
+            </Style>
+            <Style x:Key="LogOut" TargetType="Button">
+                <Setter Property="Text" Value="LogOut"/>
+                <Setter Property="TextColor" Value="white"/>
+                <Setter Property="Margin" Value="70"/>
+                <Setter Property="Font" Value="20"/>
+                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
+            </Style>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
