@@ -10,11 +10,11 @@
 
                 <Entry Text="{Binding RegisterData.UserName}" Style="{StaticResource EntryUserName}"></Entry>
 
-                <Entry Text="{Binding RegisterData.Email}" Style="{StaticResource EntryUserName}"></Entry>
+                <Entry Text="{Binding RegisterData.Email}" Style="{StaticResource EntryUserEmail}"></Entry>
 
                 <Entry Text="{Binding RegisterData.Password}" Style="{StaticResource EntryUserPass}"></Entry>
 
-                <Entry Text="{Binding RegisterData.ConfirmPassword}" Style="{StaticResource EntryUserPass}"></Entry>
+                <Entry Text="{Binding RegisterData.ConfirmPassword}" Style="{StaticResource EntryUserConfirmPass}"></Entry>
 
                 <Button Style="{StaticResource RegisterButton}" Command="{Binding SaveRegisterData}"/>
 
