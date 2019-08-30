@@ -11,7 +11,7 @@ namespace ToHomeProject.ViewModels
     public class RegisterPageViewModel : INotifyPropertyChanged
     {
         public RegisterModel RegisterData { get; set; }
-        public ICommand SaveRegisterData { get; set; }
+        public ICommand SaveRegisterDataCommand { get; set; }
         public string Result { get; set; }
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -19,7 +19,7 @@ namespace ToHomeProject.ViewModels
         {
             RegisterData = new RegisterModel();
 
-            SaveRegisterData = new Command(async () =>
+            SaveRegisterDataCommand = new Command(async () =>
             {
                 if (!UserValidations.IsnotEmpty(RegisterData.UserName))
                 {

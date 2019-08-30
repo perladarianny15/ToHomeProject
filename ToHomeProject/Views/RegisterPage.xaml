@@ -8,15 +8,15 @@
         
                 <Image Style="{StaticResource Picture}"/>
 
-                <Entry Text="{Binding RegisterData.UserName}" Style="{StaticResource EntryUserName}"></Entry>
+                <Entry Text="{Binding RegisterData.UserName}" Style="{StaticResource EntryUser}" Placeholder="Name"></Entry>
 
-                <Entry Text="{Binding RegisterData.Email}" Style="{StaticResource EntryUserEmail}"></Entry>
+                <Entry Text="{Binding RegisterData.Email}" Style="{StaticResource EntryUser}" Placeholder="Email" Keyboard="Email"></Entry>
 
-                <Entry Text="{Binding RegisterData.Password}" Style="{StaticResource EntryUserPass}"></Entry>
+                <Entry Text="{Binding RegisterData.Password}" Style="{StaticResource EntryUserPass}" Placeholder="Password"></Entry>
 
-                <Entry Text="{Binding RegisterData.ConfirmPassword}" Style="{StaticResource EntryUserConfirmPass}"></Entry>
+                <Entry Text="{Binding RegisterData.ConfirmPassword}" Style="{StaticResource EntryUserPass}" Placeholder="Confirm Password"></Entry>
 
-                <Button Style="{StaticResource RegisterButton}" Command="{Binding SaveRegisterData}"/>
+                <Button Style="{StaticResource Button}" Command="{Binding SaveRegisterDataCommand}" Text="Register" BackgroundColor="#10ada0"/>
 
                 <Label Text="{Binding Result, Mode=TwoWay}" Style="{StaticResource LabelResult}"/>
 

@@ -11,40 +11,20 @@
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="Source" Value="HomePhoto.png"/>
-
                 <Setter Property="WidthRequest" Value="200"/>
                 <Setter Property="HeightRequest" Value="200"/>
 
             </Style>
-            <Style x:Key="EntryUserName" TargetType="Entry">
-                <Setter Property="Placeholder" Value="Name"/>
+            <Style x:Key="EntryUser" TargetType="Entry">
                 <Setter Property="Margin" Value="5"/>
-            </Style>
-            <Style x:Key="EntryUserEmail" TargetType="Entry">
-                <Setter Property="Placeholder" Value="Email"/>
-                <Setter Property="Margin" Value="5"/>
-                <Setter Property="Keyboard" Value="Email"/>
             </Style>
             <Style x:Key="EntryUserPass" TargetType="Entry">
-                <Setter Property="Placeholder" Value="Password"/>
                 <Setter Property="Margin" Value="5"/>
                  <Setter Property="IsPassword" Value="True"/>
             </Style>
-            <Style x:Key="EntryUserConfirmPass" TargetType="Entry">
-                <Setter Property="Placeholder" Value="Confirm Password"/>
-                <Setter Property="Margin" Value="5"/>
-                 <Setter Property="IsPassword" Value="True"/>
-            </Style>
-            <Style x:Key="LoginButton" TargetType="Button">
-                <Setter Property="Text" Value="Login"/>
+            <Style x:Key="Button" TargetType="Button">
                 <Setter Property="TextColor" Value="white"/>
                 <Setter Property="BackgroundColor" Value="#0489B1"/>
-                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
-            </Style>
-            <Style x:Key="RegisterButton" TargetType="Button">
-                <Setter Property="Text" Value="Register"/>
-                <Setter Property="TextColor" Value="white"/>
-                <Setter Property="BackgroundColor" Value="#10ada0"/>
                 <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
             </Style>
             <Style x:Key="LabelResult" TargetType="Label">
@@ -52,29 +32,7 @@
                 <Setter Property="FontFamily" Value="Times New Roman"/>
                 <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
             </Style>
-            <Style x:Key="Home" TargetType="Button">
-                <Setter Property="Text" Value="Home"/>
-                <Setter Property="TextColor" Value="white"/>
-                <Setter Property="Margin" Value="70"/>
-                <Setter Property="Font" Value="20"/>
-                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
-            </Style>
-            <Style x:Key="Electrodomesticos" TargetType="Button">
-                <Setter Property="Text" Value="Electrodomesticos"/>
-                <Setter Property="TextColor" Value="white"/>
-                <Setter Property="Margin" Value="70"/>
-                <Setter Property="Font" Value="20"/>
-                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
-            </Style>
-            <Style x:Key="Muebles" TargetType="Button">
-                <Setter Property="Text" Value="Muebles"/>
-                <Setter Property="TextColor" Value="white"/>
-                <Setter Property="Margin" Value="70"/>
-                <Setter Property="Font" Value="20"/>
-                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
-            </Style>
-            <Style x:Key="LogOut" TargetType="Button">
-                <Setter Property="Text" Value="LogOut"/>
+            <Style x:Key="NavButton" TargetType="Button">
                 <Setter Property="TextColor" Value="white"/>
                 <Setter Property="Margin" Value="70"/>
                 <Setter Property="Font" Value="20"/>

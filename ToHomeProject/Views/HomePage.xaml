@@ -9,10 +9,10 @@
             <ScrollView>
                 <StackLayout Orientation="Vertical" BackgroundColor="#83d9de">
 
-                  <Button Style="{StaticResource Home}"/>
-                  <Button Style="{StaticResource Electrodomesticos}"/>
-                  <Button Style="{StaticResource Muebles}"/>
-                  <Button Style="{StaticResource LogOut}" Clicked="LogOut"/>
+                  <Button Style="{StaticResource NavButton}" Text="Home"/>
+                  <Button Style="{StaticResource NavButton}" Text="Muebles"/>
+                  <Button Style="{StaticResource NavButton}" Text="Electrodomesticos"/>
+                  <Button Style="{StaticResource NavButton}" Text="LogOut" Clicked="LogOut"/>
                 </StackLayout>
                 </ScrollView>
 

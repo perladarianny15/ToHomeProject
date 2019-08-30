@@ -11,7 +11,7 @@ namespace ToHomeProject.ViewModels
     public class LoginPageViewModel: INotifyPropertyChanged
     {
         public LoginModel UserData { get; set; }
-        public ICommand SaveLoginData { get; set; }
+        public ICommand SaveLoginDataCommand { get; set; }
         public ICommand ToRegistePage { get; private set; }
         public string Result { get; set; }
         public event PropertyChangedEventHandler PropertyChanged;
@@ -20,7 +20,7 @@ namespace ToHomeProject.ViewModels
         {
             UserData = new LoginModel();
 
-            SaveLoginData = new Command(async () =>
+            SaveLoginDataCommand = new Command(async () =>
             {
                 if (!UserValidations.IsnotEmpty(UserData.UserName))
                 {
