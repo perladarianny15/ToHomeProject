@@ -15,4 +15,3 @@
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.dll
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.pdb
-/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/ToHomeProject.csprojAssemblyReference.cache

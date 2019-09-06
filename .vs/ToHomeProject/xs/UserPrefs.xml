@@ -1,21 +1,20 @@
 ﻿<Properties StartupConfiguration="{8ADC78FA-64C6-4450-891E-5095D962A18D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToHomeProject/Views/ContactListPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToHomeProject/Views/ContactListPage.xaml">
     <Files>
-      <File FileName="ToHomeProject/ViewModels/ContactPageViewModel.cs" Line="45" Column="46" />
+      <File FileName="ToHomeProject/ViewModels/ContactPageViewModel.cs" Line="56" Column="95" />
       <File FileName="ToHomeProject/Views/ContactPage.xaml.cs" Line="1" Column="1" />
       <File FileName="ToHomeProject/Views/ContactListPage.xaml.cs" Line="24" Column="85" />
+      <File FileName="ToHomeProject/Views/ContactListPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ToHomeProject" expanded="True">
+          <Node name="ToHomeProject" expanded="True" selected="True">
             <Node name="ToHomeProject" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="ContactListPage.xaml" expanded="True">
-                  <Node name="ContactListPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="ContactListPage.xaml" expanded="True" />
                 <Node name="ContactPage.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
@@ -32,9 +31,7 @@
   <MonoDevelop.Ide.ItemProperties.ToHomeProject.Android PreferredExecutionTarget="Android.my_device" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/admin/Projects/ToHomeProject/ToHomeProject/Views/ContactListPage.xaml.cs" relfile="ToHomeProject/Views/ContactListPage.xaml.cs" line="31" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
