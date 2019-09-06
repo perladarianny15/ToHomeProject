@@ -12,7 +12,7 @@ namespace ToHomeProject.Views
         public ContactListPage()
         {
             InitializeComponent();
-            BindingContext = new ContactPageViewModel();
+            BindingContext = new ContactPageListViewModel();
 
             var refresh = new ToolbarItem
             {
@@ -27,15 +27,7 @@ namespace ToHomeProject.Views
             ToolbarItems.Add(refresh);
 
             ContactModel myContact = new ContactModel();
-
             MessagingCenter.Send<ContactListPage, ContactModel>(this, myContact.FirstName, myContact);
-
-        }
-
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
         }
     }
 }

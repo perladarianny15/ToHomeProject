@@ -4,8 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ToHomeProject.Views.ContactListPage">
      <ListView x:Name="proff"
-            ItemsSource="{Binding Contacts}"
-            ItemTapped="Handle_ItemTapped"
+            ItemsSource="{Binding Contacts}" SelectedItem="{Binding SelectedContacts}"
             CachingStrategy="RecycleElement" SeparatorVisibility="None" BackgroundColor="#c5faf6">
             
     <!--Built in Cells-->
@@ -20,7 +19,7 @@
                                        IsDestructive="True"/>
             </ViewCell.ContextActions>
                         <StackLayout>
-                            <Label Text="{Binding FirstName}" TextColor="white"/>
+                            <Label Text="{Binding FirstName}" TextColor="black"/>
                         </StackLayout>
            </ViewCell>
         </DataTemplate>

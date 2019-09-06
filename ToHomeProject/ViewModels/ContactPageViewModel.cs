@@ -10,25 +10,8 @@ namespace ToHomeProject.ViewModels
     public class ContactPageViewModel
     {
         public ContactModel contact { get; set; }
-        public ContactModel SelectedContacts
-        {
-            get
-            {
-                return contact;
-            }
-            set
-            {
-                contact = value;
-
-                if (contact != null)
-                    OnSelectItem(contact);
-
-            }
-        }
 
         public ObservableCollection<ContactModel> Contacts { get; set; } = new ObservableCollection<ContactModel>();
-
-        public ICommand DeleteElementCommand { get; set; }
 
         public ICommand SaveContactsCommand { get; set; }
 
@@ -38,7 +21,6 @@ namespace ToHomeProject.ViewModels
             contact = new ContactModel();
             SaveContactsCommand = new Command(async () =>
             {
-                myContact.FirstName = "prueba01ß";
                 myContact.FirstName = contact.FirstName;
                 myContact.LastName = contact.LastName;
                 myContact.Company = contact.Company;
@@ -46,21 +28,13 @@ namespace ToHomeProject.ViewModels
                 myContact.Email = contact.Email;
                 Contacts.Add(myContact);
 
-                await Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new ContactListPage()));
-
+                MessagingCenter.Send(this, myContact.FirstName, Contacts);
+                //await Application.Current.MainPage.Navigation.PopAsync(new ContactListPage());
+                await Application.Current.MainPage.Navigation.PushModalAsync(new ContactListPage());
 
             });
 
-            MessagingCenter.Subscribe<ContactListPage, ContactModel>(this, myContact.FirstName, ((sender, param) =>
-            {
-                MessagingCenter.Unsubscribe<ContactListPage, string>(this, myContact.FirstName);
-            }));
 
-            DeleteElementCommand = new Command<ContactModel>(async (param) =>
-                {
-                  var result = await App.Current.MainPage.DisplayActionSheet("Menu", "Cancel", "Destruction");
-
-                });
 
                 // MessagingCenter.Subscribe<App, string>(this, "TESTID", ((sender, param) =>
                 //{
@@ -68,12 +42,5 @@ namespace ToHomeProject.ViewModels
                 //}));
             }
 
-        void OnSelectItem(ContactModel contact)
-        {
-            ContactModel myContact = new ContactModel();
-            myContact.FirstName = "New Student";
-
-            Contacts.Add(myContact);
-        }
     }
 }
