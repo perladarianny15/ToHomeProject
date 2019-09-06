@@ -38,7 +38,7 @@ namespace ToHomeProject.ViewModels
             contact = new ContactModel();
             SaveContactsCommand = new Command(async () =>
             {
-                myContact.FirstName = "prueba";
+                myContact.FirstName = "prueba01ß";
                 myContact.FirstName = contact.FirstName;
                 myContact.LastName = contact.LastName;
                 myContact.Company = contact.Company;
