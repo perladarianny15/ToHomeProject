@@ -135,6 +135,12 @@
     <BundleResource Include="Resources\HomePhoto.png" />
     <BundleResource Include="Resources\Login.png" />
     <BundleResource Include="Resources\Register.png" />
-    <BundleResource Include="Resources\bk.png" />
+    <BundleResource Include="Resources\home.png" />
+    <BundleResource Include="Resources\Picture.png" />
+    <BundleResource Include="Resources\Company.png" />
+    <BundleResource Include="Resources\Camera.png" />
+    <BundleResource Include="Resources\Email.png" />
+    <BundleResource Include="Resources\Phone.png" />
+    <BundleResource Include="Resources\User.png" />
   </ItemGroup>
 </Project>

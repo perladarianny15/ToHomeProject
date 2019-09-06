@@ -3,7 +3,44 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ToHomeProject.Views.ContactListPage">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+     <ListView x:Name="proff"
+            ItemsSource="{Binding Contacts}"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement" SeparatorVisibility="None" BackgroundColor="#c5faf6">
+            
+    <!--Built in Cells-->
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+            <ViewCell.ContextActions>
+                            <MenuItem Text="Menu"/>
+                             <MenuItem Text="Delete"
+                                       Command="{Binding Path=BindingContext.DeleteElementCommand, Source={x:Reference proff}}"
+                                       CommandParameter="{Binding .}"
+                                       IsDestructive="True"/>
+            </ViewCell.ContextActions>
+                        <StackLayout>
+                            <Label Text="{Binding FirstName}" TextColor="white"/>
+                        </StackLayout>
+           </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+
+    
+    <!--Custom View Cells-->
+    <!--
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout>
+            <Label Text="{Binding Text}" 
+                   Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="{Binding Detail}" 
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+    -->
+  </ListView>
 </ContentPage>

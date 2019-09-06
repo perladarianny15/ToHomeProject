@@ -12,6 +12,8 @@
                   <Button Style="{StaticResource NavButton}" Text="Home"/>
                   <Button Style="{StaticResource NavButton}" Text="Muebles"/>
                   <Button Style="{StaticResource NavButton}" Text="Electrodomesticos"/>
+                  <Button Style="{StaticResource NavButton}" Text="Contacts"/>
+
                   <Button Style="{StaticResource NavButton}" Text="LogOut" Clicked="LogOut"/>
                 </StackLayout>
                 </ScrollView>
@@ -25,9 +27,10 @@
               <ContentPage Title="Home Page">
                   <ScrollView>
                       <StackLayout>
-                              <Image Source="bk.png"
+                          <Image Source="home.png"
                                      VerticalOptions="FillAndExpand"
                                      HorizontalOptions="FillAndExpand"/>
+                              
                       </StackLayout>
                   </ScrollView>
               </ContentPage>

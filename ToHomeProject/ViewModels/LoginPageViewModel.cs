@@ -32,7 +32,7 @@ namespace ToHomeProject.ViewModels
                 }
                 else
                 {
-                    await Application.Current.MainPage.Navigation.PushModalAsync(new HomePage());
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new ContactListPage() { BackgroundColor = Color.CadetBlue}));
                 }
             });
 

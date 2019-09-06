@@ -3,6 +3,8 @@
 /Users/admin/Projects/ToHomeProject/ToHomeProject/bin/Debug/netstandard2.0/ToHomeProject.pdb
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/ContactListPage.xaml.g.cs
+/Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/ContactPage.xaml.g.cs
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/HomePage.xaml.g.cs
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/LoginPage.xaml.g.cs
 /Users/admin/Projects/ToHomeProject/ToHomeProject/obj/Debug/netstandard2.0/Views/RegisterPage.xaml.g.cs
