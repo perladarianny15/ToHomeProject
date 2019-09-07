@@ -27,7 +27,7 @@
                                 IsDestructive="True"/>
                 </ViewCell.ContextActions>
                       <StackLayout Padding="25,2,0,20" Orientation="Vertical" Margin="10,0,0,10">
-                            <Label Text="{Binding FirstName}" TextColor="#555956" FontFamily="Times New Roman" FontSize="Subtitle" FontAttributes="Bold"/>
+                            <Label Text="{Binding FirstName}" Style="{Binding ContactLabel}"/>
 
                             <Label Text="{Binding CelNumber}" TextColor="gray" FontSize="Small" />
                             

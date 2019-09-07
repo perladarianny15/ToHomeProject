@@ -1,21 +1,15 @@
 ﻿<Properties StartupConfiguration="{8ADC78FA-64C6-4450-891E-5095D962A18D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToHomeProject/Views/ContactPage.xaml">
-    <Files>
-      <File FileName="ToHomeProject/Views/RegisterPage.xaml" Line="22" Column="1" />
-      <File FileName="ToHomeProject/ViewModels/LoginPageViewModel.cs" Line="11" Column="36" />
-      <File FileName="ToHomeProject/ViewModels/ContactPageViewModel.cs" Line="33" Column="65" />
-      <File FileName="ToHomeProject/Views/ContactPage.xaml" Line="52" Column="47" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ToHomeProject" expanded="True">
             <Node name="ToHomeProject" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="ContactPage.xaml" selected="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="LoginPageViewModel.cs" selected="True" />
               </Node>
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>

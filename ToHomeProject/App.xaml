@@ -44,7 +44,12 @@
                 <Setter Property="WidthRequest" Value="250"/>
 
             </Style>
-
+            <Style x:Key="ContactLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="#555956"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+                <Setter Property="FontSize" Value="Subtitle"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
 
         </ResourceDictionary>
     </Application.Resources>
