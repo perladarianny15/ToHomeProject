@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using ToHomeProject.Models;
+using ToHomeProject.Views;
 using Xamarin.Forms;
 
 namespace ToHomeProject.ViewModels
@@ -11,6 +12,11 @@ namespace ToHomeProject.ViewModels
         public ObservableCollection<ContactModel> Contacts { get; set; } = new ObservableCollection<ContactModel>();
 
         public ICommand DeleteElementCommand { get; set; }
+
+        public ICommand GoToNewContactCommand { get; set; }
+
+        public ICommand EditElementCommand { get; set; }
+
 
         public ContactModel contact { get; set; }
         
@@ -23,10 +29,6 @@ namespace ToHomeProject.ViewModels
             set
             {
                 contact = value;
-
-                if (contact != null)
-                    OnSelectItem(contact);
-
             }
         }
 
@@ -34,29 +36,41 @@ namespace ToHomeProject.ViewModels
         {
             ContactModel myContact = new ContactModel();
 
-            myContact.FirstName = "prueba01ß";
-            Contacts.Add(myContact);
-
-
             DeleteElementCommand = new Command<ContactModel>(async (param) =>
             {
-                var result = await App.Current.MainPage.DisplayActionSheet("Menu", "Cancel", "Destruction");
+                var result = await App.Current.MainPage.DisplayActionSheet("Menu", "Cancel", "Delete");
                 Contacts.Remove(param);
 
             });
 
-            MessagingCenter.Subscribe<ContactPageViewModel, ContactModel>(this, myContact.FirstName, ((sender, param) =>
+            GoToNewContactCommand = new Command(async () =>
             {
-                MessagingCenter.Unsubscribe<ContactPageViewModel, ContactModel>(this, myContact.FirstName);
-            }));
+                await App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new ContactPage()));
+
+                MessagingCenter.Subscribe<ContactPageViewModel, ContactModel>(this, "SendContact", ((sender, param) =>
+                {
+                    Contacts.Add(param);
+                    MessagingCenter.Unsubscribe<ContactPageViewModel, ContactModel>(this, "SendContact");
+                }));
+            });
+            EditElementCommand = new Command<ContactModel>(async (param) =>
+            {
+                string action = await App.Current.MainPage.DisplayActionSheet("Opciones", "Cancel", "Edit", $"Call+ {param.CelNumber}");
+
+                if (action.Contains("Edit"))
+                {
+                    await App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new ContactPage()));
+                }else if (action.Contains("Call"))
+                {
+                    OnSelectItem(param);
+                }
+            });
         }
 
-        void OnSelectItem(ContactModel contact)
+        async void OnSelectItem(ContactModel contact)
         {
-            ContactModel myContact = new ContactModel();
-            myContact.FirstName = "New Student";
+            await App.Current.MainPage.DisplayAlert("Calling", $"Calling+ {contact.CelNumber}", "Cancel");
 
-            Contacts.Add(myContact);
         }
     }
 }

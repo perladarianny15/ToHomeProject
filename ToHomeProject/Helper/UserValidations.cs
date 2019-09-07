@@ -25,6 +25,14 @@ namespace ToHomeProject.Helper
 
             return result;
         }
-
+        public static bool NumberIsNotEmpty(int data)
+        {
+            bool result = false;
+            if (data != 0)
+            {
+                result = true;
+            }
+            return result;
+        }
     }
 }

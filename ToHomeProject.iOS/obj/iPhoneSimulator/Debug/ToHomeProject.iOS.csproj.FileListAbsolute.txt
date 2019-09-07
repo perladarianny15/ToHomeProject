@@ -69,3 +69,6 @@
 /Users/admin/Projects/ToHomeProject/ToHomeProject.iOS/obj/iPhoneSimulator/Debug/ToHomeProject.iOS.csproj.CopyComplete
 /Users/admin/Projects/ToHomeProject/ToHomeProject.iOS/obj/iPhoneSimulator/Debug/ToHomeProject.iOS.exe
 /Users/admin/Projects/ToHomeProject/ToHomeProject.iOS/obj/iPhoneSimulator/Debug/ToHomeProject.iOS.pdb
+/Users/admin/Projects/ToHomeProject/ToHomeProject.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.Abstractions.dll
+/Users/admin/Projects/ToHomeProject/ToHomeProject.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.Abstractions.pdb
+/Users/admin/Projects/ToHomeProject/ToHomeProject.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.dll

@@ -16,7 +16,6 @@ namespace ToHomeProject.Views
         {
             InitializeComponent();
             BindingContext = new ContactPageViewModel();
-
         }
     }
 }

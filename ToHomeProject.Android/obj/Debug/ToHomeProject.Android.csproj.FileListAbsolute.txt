@@ -321,8 +321,8 @@
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md5d630c3d3bfb5f5558520331566132d97/GyroscopeListener.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/customtabs/CustomTabsClient_CustomTabsCallbackImpl.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/customtabs/R.java
-/Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/compat/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/xamarin/essentials/fileProvider.java
+/Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/compat/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/cardview/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/appcompat/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md5f92e0daf340890c9667469657ee2ece8/FrameRenderer.java
@@ -334,12 +334,11 @@
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/app/AlertDialog_IDialogInterfaceOnMultiChoiceClickListenerImplementor.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/app/AlertDialog_IDialogInterfaceOnClickListenerImplementor.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/app/AlertDialog_IDialogInterfaceOnCancelListenerImplementor.java
-/Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/mediarouter/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md5dcb6eccdc824e0677ffae8ccdde42930/KeepAliveService.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md5dcb6eccdc824e0677ffae8ccdde42930/CustomTabsServiceConnectionImpl.java
+/Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/v7/mediarouter/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/transition/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/design/widget/Snackbar_SnackbarActionClickImplementor.java
-/Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/design/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md51558244f76c53b6aeda52c8a337f2c37/ShellSearchViewAdapter_ObjectWrapper.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md51558244f76c53b6aeda52c8a337f2c37/NativeViewWrapperRenderer.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md51558244f76c53b6aeda52c8a337f2c37/EdgeSnapHelper.java
@@ -488,6 +487,7 @@
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md51558244f76c53b6aeda52c8a337f2c37/FormsWebChromeClient.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md51558244f76c53b6aeda52c8a337f2c37/FormattedStringExtensions_LineHeightSpan.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md51558244f76c53b6aeda52c8a337f2c37/StepperRenderer.java
+/Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/android/support/design/R.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md58432a647068b097f9637064b8985a5e0/NavigationPageRenderer_DrawerMultiplexedListener.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md58432a647068b097f9637064b8985a5e0/FrameRenderer.java
 /Users/admin/Projects/ToHomeProject/ToHomeProject.Android/obj/Debug/android/src/md58432a647068b097f9637064b8985a5e0/FormsViewPager.java

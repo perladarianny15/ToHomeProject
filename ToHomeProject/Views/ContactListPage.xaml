@@ -3,43 +3,37 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ToHomeProject.Views.ContactListPage">
-     <ListView x:Name="proff"
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" Text="Add new Contact" Priority="0" Command="{Binding GoToNewContactCommand}"/>
+    </ContentPage.ToolbarItems>
+     <ListView x:Name="ContactList"
             ItemsSource="{Binding Contacts}" SelectedItem="{Binding SelectedContacts}"
-            CachingStrategy="RecycleElement" SeparatorVisibility="None" BackgroundColor="#c5faf6">
+            SeparatorVisibility="None" BackgroundColor="#c5faf6">
+         <ListView.Header>
+             <StackLayout Orientation="Horizontal" Padding="15,0,0,15">
+                 <Label Text="Contacts" TextColor="White" FontAttributes="Bold" FontSize="Title" />
+             </StackLayout>
+         </ListView.Header>
             
-    <!--Built in Cells-->
     <ListView.ItemTemplate>
         <DataTemplate>
             <ViewCell>
-            <ViewCell.ContextActions>
-                            <MenuItem Text="Menu"/>
-                             <MenuItem Text="Delete"
-                                       Command="{Binding Path=BindingContext.DeleteElementCommand, Source={x:Reference proff}}"
-                                       CommandParameter="{Binding .}"
-                                       IsDestructive="True"/>
-            </ViewCell.ContextActions>
-                        <StackLayout>
-                            <Label Text="{Binding FirstName}" TextColor="black"/>
-                        </StackLayout>
-           </ViewCell>
+                <ViewCell.ContextActions>
+                      <MenuItem Text="More" Command="{Binding Path=BindingContext.EditElementCommand, Source={x:Reference ContactList}}"
+                                CommandParameter="{Binding .}"/>
+                      <MenuItem Text="Delete"
+                                Command="{Binding Path=BindingContext.DeleteElementCommand, Source={x:Reference ContactList}}"
+                                CommandParameter="{Binding .}"
+                                IsDestructive="True"/>
+                </ViewCell.ContextActions>
+                      <StackLayout Padding="25,2,0,20" Orientation="Vertical" Margin="10,0,0,10">
+                            <Label Text="{Binding FirstName}" TextColor="#555956" FontFamily="Times New Roman" FontSize="Subtitle" FontAttributes="Bold"/>
+
+                            <Label Text="{Binding CelNumber}" TextColor="gray" FontSize="Small" />
+                            
+                      </StackLayout>
+            </ViewCell>
         </DataTemplate>
     </ListView.ItemTemplate>
-
-    
-    <!--Custom View Cells-->
-    <!--
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <StackLayout>
-            <Label Text="{Binding Text}" 
-                   Style="{DynamicResource ListItemTextStyle}" />
-            <Label Text="{Binding Detail}" 
-                   Style="{DynamicResource ListItemDetailTextStyle}"/>
-          </StackLayout>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-    -->
   </ListView>
 </ContentPage>

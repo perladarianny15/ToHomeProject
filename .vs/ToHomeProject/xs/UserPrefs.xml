@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{8ADC78FA-64C6-4450-891E-5095D962A18D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToHomeProject/ViewModels/ContactPageViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToHomeProject/Views/ContactPage.xaml">
     <Files>
-      <File FileName="ToHomeProject/Views/ContactListPage.xaml.cs" Line="30" Column="1" />
-      <File FileName="ToHomeProject/ViewModels/ContactPageListViewModel.cs" Line="39" Column="1" />
-      <File FileName="ToHomeProject/ViewModels/ContactPageViewModel.cs" Line="31" Column="75" />
-      <File FileName="ToHomeProject/Views/HomePage.xaml.cs" Line="20" Column="66" />
+      <File FileName="ToHomeProject/Views/RegisterPage.xaml" Line="22" Column="1" />
+      <File FileName="ToHomeProject/ViewModels/LoginPageViewModel.cs" Line="11" Column="36" />
+      <File FileName="ToHomeProject/ViewModels/ContactPageViewModel.cs" Line="33" Column="65" />
+      <File FileName="ToHomeProject/Views/ContactPage.xaml" Line="52" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,19 +12,17 @@
           <Node name="ToHomeProject" expanded="True">
             <Node name="ToHomeProject" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="ContactPageViewModel.cs" selected="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="ContactListPage.xaml" expanded="True" />
-                <Node name="ContactPage.xaml" expanded="True" />
-                <Node name="HomePage.xaml" expanded="True" />
+                <Node name="ContactPage.xaml" selected="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
             </Node>
-            <Node name="ToHomeProject.iOS" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>rncInfo.name</Value>
         </State>
       </Pad>
     </Pads>

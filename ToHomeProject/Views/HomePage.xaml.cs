@@ -15,9 +15,5 @@ namespace ToHomeProject.Views
         {
             await Navigation.PopModalAsync();
         }
-        //async void ToContactPage(object sender, EventArgs args)
-        //{
-          //  await Navigation.PushModalAsync(new ContactPage());
-        //}
     }
 }
